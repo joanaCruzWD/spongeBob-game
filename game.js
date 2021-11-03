@@ -1,9 +1,12 @@
 class Game {
-
     constructor() {
         this.bg = new Image();
         this.bg.src = "./images/background.jpg";
         this.bob = new Bob();
+        this.obstacles = [
+           "./images/snail_char.png",
+            "./images/star.png"
+        ];
         this.obstacleArr = [new Obstacle("./images/snail_char.png", 500)];
         this.obstaclesDistance = 100;
         this.isGameOver = false;
@@ -26,18 +29,13 @@ class Game {
         let lastObstacle = this.obstacleArr[lastIdx];
 
         if (lastObstacle.x === this.obstaclesDistance) {
-            let randomIndex = Math.floor(Math.random() * (this.randomRange.length));
+            let randomIndex = Math.floor(Math.random() * (this.randomRange.length)); // random distance
+    
+            let random = Math.floor(Math.random() * (this.obstacles.length)); // random enemy
 
-            if (this.image === 0) {
-                let obstaclesPosition = new Obstacle("./images/snail_char.png", this.randomRange[randomIndex]);
-                this.obstacleArr.push(obstaclesPosition);
-                this.image = 1;
-            }
-            else if (this.image === 1) {
-                let obstaclesPosition = new Obstacle("./images/star.png", this.randomRange[randomIndex]);
-                this.obstacleArr.push(obstaclesPosition);
-                this.image = 0;
-            }
+            let obstaclesPosition = new Obstacle(this.obstacles[random], this.randomRange[randomIndex]);
+            this.obstacleArr.push(obstaclesPosition);
+
         }
     }
 
