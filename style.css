@@ -1,0 +1,78 @@
+@font-face {
+  font-family: Krabby Patty;
+  src: url("/font/krabby_patty/Krabby\ Patty.ttf");
+}
+
+#container {
+  font-family: Krabby Patty;
+}
+
+#start-btn {
+  box-shadow: inset 0px 1px 0px 0px #bbdaf7;
+  background: linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
+  background-color: #79bbff;
+  border-radius: 6px;
+  border: 1px solid #84bbf3;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "Krabby Patty";
+  font-weight: lighter;
+  font-size: 30px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #528ecc;
+  padding: 20px;
+  position: absolute;
+  top: 60%;
+  margin-left: 365px;
+}
+#restart-btn {
+  box-shadow: inset 0px 1px 0px 0px #bbdaf7;
+  background: linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
+  background-color: #79bbff;
+  border-radius: 6px;
+  border: 1px solid #84bbf3;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "Krabby Patty";
+  font-weight: lighter;
+  font-size: 30px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #528ecc;
+  padding: 20px;
+  position: absolute;
+  top: 10%;
+  margin-left: 350px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-direction: column-reverse;
+  justify-content: right;
+  margin-right: 25%;
+  text-align: center;
+  overflow: hidden;
+  width: 100%;
+  min-height: 36px;
+  position: relative;
+}
+#initial_logo {
+  padding: 20px;
+  position: absolute;
+  top: 20%;
+  margin-left: 350px;
+}
+
+#my-canvas {
+  background-image: url("./images/background.jpg");
+  display: none;
+}
+
+#gameover-screen {
+  display: none;
+}
+
+

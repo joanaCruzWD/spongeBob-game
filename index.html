@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SpongeBob </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- INITIAL SCREEN -->
+        <div id="initial-screen" class="container">
+            
+            <img src="./images/initial_img.jpg" width="600" height="400">
+            <button id="start-btn">Start!</button>
+            <img id="initial_logo" src="./images/logo_sponge.png" width="250">
+        
+        </div>
+
+        <!-- GAME SCREEN -->
+        <canvas id="my-canvas" width="600" height="400"></canvas>
+        <div id="displayScore"></div>
+
+        <!-- GAME OVER SCREEN -->
+        <div id="gameover-screen" class="container">
+            <img src="./images/gameover.jpg" width="600" height="400" alt="logo">
+            <button id="restart-btn">Play Again!</button>
+
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+    <script src="./game.js"></script>
+    <script src="./bob.js"></script>
+    <script src="./obstacle.js"></script>
+
+</body>
+
+</html>
