@@ -15,21 +15,21 @@ class Bob {
 
     bobJump = () => {
         let floor = canvas.height / 1.70;
-        if (this.y === floor || this.y > floor) { 
+        if (this.y === floor || this.y > floor) {
             this.y -= 180;
         }
     }
-  
+
     bobDrop = (speed) => {
         let floor = canvas.height / 1.7;
         if (this.y < floor) { // if bob is in the air
             this.y += speed
-            if(this.y >= floor){
+            if (this.y >= floor) {
                 return true // on the floor
             }
             return false // still in the air
         }
-        return false 
+        return false
     }
 
     bobSnailSquidCollision = (singleObstacle) => {
