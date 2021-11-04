@@ -6,25 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> SpongeBob </title>
+    <link rel="icon" href="./images/Icon.png" type="image/Icon.png">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-    <div class="container">
-
+    <div class="all-features">
         <!-- INITIAL SCREEN -->
         <div id="initial-screen" class="container">
-            
-            <img src="./images/initial_img.jpg" width="600" height="400">
+
+            <img src="./images/initial_img.jpg"alt="initial screen "width="600" height="400">
             <button id="start-btn">Start!</button>
             <img id="initial_logo" src="./images/logo_sponge.png" width="250">
-        
+
         </div>
 
         <!-- GAME SCREEN -->
+        <div id="center">
+            <div class="score">SCORE: <span>0</span></div>
+        </div>
+        <!-- <h1 id="score">Score: <span>0</span></h1> -->
         <canvas id="my-canvas" width="600" height="400"></canvas>
-        <div id="displayScore"></div>
 
         <!-- GAME OVER SCREEN -->
         <div id="gameover-screen" class="container">

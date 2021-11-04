@@ -16,7 +16,7 @@ class Bob {
     bobJump = () => {
         let floor = canvas.height / 1.65;
         if (this.y === floor) { 
-            this.y -= 150;
+            this.y -= 170;
         }
     }
   

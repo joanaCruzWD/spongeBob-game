@@ -1,5 +1,3 @@
-console.log("obstacles connected");
-
 class Obstacle{
     constructor(srcImg, xPos) {
         this.image = new Image();

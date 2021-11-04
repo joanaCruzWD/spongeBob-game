@@ -1,19 +1,16 @@
 //*GLOBAL VARIABLES
-
 let canvas = document.querySelector("#my-canvas");
 let ctx = canvas.getContext("2d");
-
+//Game music
 let gameSound = document.createElement("audio"); //empty element
 gameSound.src = 'songs/gameMusic.mp3';
 gameSound.type = 'audio/mpeg';
 document.querySelector(".container").appendChild(gameSound);
-
+//Game over music
 let gameOverSound = document.createElement("audio"); //empty element
 gameOverSound.src = 'songs/gameOver.mp3';
 gameOverSound.type = 'audio/mpeg';
 document.querySelector(".container").appendChild(gameOverSound);
-
-
 
 //TODO DOM elements- buttons and fullscreen
 let startBtn = document.querySelector("#start-btn");
@@ -31,7 +28,6 @@ const startGame = () => {
     gameOverSound.pause();
     gameOverSound.currentTime = 0;
     gameSound.play();
-   
 }
 
 const restartGame = () => {
@@ -43,10 +39,7 @@ const restartGame = () => {
     gameOverSound.currentTime = 0;
     gameSound.play()
 }
-
-
 //*ADD EVENT LISTENERS
-
 startBtn.addEventListener("click", startGame);
 restartBtn.addEventListener("click", restartGame);
 window.addEventListener("keydown", () => {
