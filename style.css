@@ -5,15 +5,20 @@
   text-shadow: 1px 1px 5px black;
 }
 
-#container {
+.container {
   font-family: Krabby Patty;
   text-shadow: 1px 1px 5px black;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.logo {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
 }
 
 .all-features {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   flex-direction: column-reverse;
   justify-content: right;
   margin-right: 25%;
@@ -23,18 +28,17 @@
   min-height: 36px;
   position: relative;
 }
-#board{
-  position: absolute;
+#board {
   top: 1%;
   left: 11%;
 }
 
 /* Initial screen */
-#initial_logo {
+/* #initial_logo {
   position: absolute;
   top: 10%;
   right: 10%;
-}
+} */
 /* Style of the buttons */
 #start-btn {
   box-shadow: inset 0px 1px 0px 0px #bbdaf7;
@@ -51,7 +55,6 @@
   text-decoration: none;
   text-shadow: 0px 1px 0px #528ecc;
   padding: 20px;
-  position: absolute;
   top: 50%;
   right: 16%;
 }
@@ -70,7 +73,6 @@
   text-decoration: none;
   text-shadow: 0px 1px 0px #528ecc;
   padding: 20px;
-  position: absolute;
   top: 50%;
   right: 16%;
 }
@@ -81,19 +83,20 @@
 #gameover-screen {
   display: none;
 }
-#center {
+
+.score {
   font-family: Krabby Patty;
   color: rgb(19, 69, 108);
-  transform-style: preserve-3d;
-  position: absolute;
   top: 95%;
   right: 18%;
-  transform: translateY(-50%) translateX(-50%);
-}
-.score {
   transform-style: preserve-3d;
-  font-size:40px;
-  position: relative;
+  transform: translateY(-50%) translateX(-50%);
+  font-size: 40px;
   line-height: 40px;
   left: 35%;
+  display: none;
+}
+
+.enemies {
+  display: inline-block;
 }
