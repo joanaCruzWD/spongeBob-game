@@ -12,7 +12,7 @@ class Obstacle{
     drawObstacles = () => {
         ctx.drawImage(this.image, this.x, this.y, this.width, this.height);
     }
-    obstaclesMove = () => {
-        this.x -= 5;
+    obstaclesMove = (speed) => {
+        this.x -= speed;
     }
 }

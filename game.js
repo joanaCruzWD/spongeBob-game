@@ -4,14 +4,18 @@ class Game {
         this.bg.src = "./images/background.jpg";
         this.bob = new Bob();
         this.obstacles = [
-           "./images/snail_char.png",
-            "./images/star.png"
+            "./images/snail_char.png",
+            "./images/star.png",
+            "./images/crab.png",
+            "./images/squid.png",
+            "./images/plankton.png"
         ];
         this.obstacleArr = [new Obstacle("./images/snail_char.png", 500)];
         this.obstaclesDistance = 100;
         this.isGameOver = false;
-        this.image = 0;  // 0  1
         this.score = 0;
+        this.obstacleSpeed = 5
+        this.bobDropSpeed = 2.5
         this.randomRange = [500, 600, 700]
     }
 
@@ -28,14 +32,13 @@ class Game {
         let lastIdx = this.obstacleArr.length - 1;
         let lastObstacle = this.obstacleArr[lastIdx];
 
-        if (lastObstacle.x === this.obstaclesDistance) {
+        if (lastObstacle.x <= this.obstaclesDistance) {
             let randomIndex = Math.floor(Math.random() * (this.randomRange.length)); // random distance
-    
+
             let random = Math.floor(Math.random() * (this.obstacles.length)); // random enemy
 
             let obstaclesPosition = new Obstacle(this.obstacles[random], this.randomRange[randomIndex]);
             this.obstacleArr.push(obstaclesPosition);
-
         }
     }
 
@@ -45,9 +48,15 @@ class Game {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
 
         //* 2. MOVEMENT AND CHANGES ON ELEMENTS
-        this.bob.bobDrop();
+        if (this.bob.bobDrop(this.bobDropSpeed)) {
+            this.score += 10
+            if (this.obstacleArr.length % 5 === 0) {
+                this.obstacleSpeed ++
+                this.bobDropSpeed += 0.5
+            }
+        }
         this.obstacleArr.forEach((eachObstacle) => {
-            eachObstacle.obstaclesMove();
+            eachObstacle.obstaclesMove(this.obstacleSpeed);
         })
         this.addObstacles();
         this.obstacleArr.forEach((eachObstacle) => {

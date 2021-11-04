@@ -20,11 +20,16 @@ class Bob {
         }
     }
   
-    bobDrop = () => {
+    bobDrop = (speed) => {
         let floor = canvas.height / 1.65;
-        if (this.y < floor) {
-            this.y += 2.5
+        if (this.y < floor) { // if bob is in the air
+            this.y += speed
+            if(this.y >= floor){
+                return true // on the floor
+            }
+            return false // still in the air
         }
+        return false 
     }
 
     bobSnailSquidCollision = (singleObstacle) => {

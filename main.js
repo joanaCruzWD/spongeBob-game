@@ -43,22 +43,7 @@ const restartGame = () => {
     gameOverSound.currentTime = 0;
     gameSound.play()
 }
-//*Score
-// var start = new Date().getTime(),
-//     score = '0.1';
-// var interval = window.setInterval(function () {
-//     var time = new Date().getTime() - start;
-//     score = Math.floor(time / 1000);
 
-//     if (score === 1000) {
-//         window.clearInterval(interval);
-//         if (!alert("You win!\nPress 'OK' to play again")) {
-//             window.location.reload();
-//         }
-//     }
-
-//     document.getElementById('displayScore').innerHTML = score += + '.00 ';
-// });
 
 //*ADD EVENT LISTENERS
 
