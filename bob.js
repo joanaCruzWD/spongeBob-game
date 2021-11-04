@@ -2,10 +2,10 @@ class Bob {
     constructor() {
         this.bobImg = new Image();
         this.bobImg.src = "./images/sponge.gif";
-        this.width = 75;
-        this.height = 75;
+        this.width = 100;
+        this.height = 100;
         this.x = canvas.width / 14;
-        this.y = canvas.height / 1.65;
+        this.y = canvas.height / 1.70;
     }
 
     //methods
@@ -14,14 +14,14 @@ class Bob {
     }
 
     bobJump = () => {
-        let floor = canvas.height / 1.65;
-        if (this.y === floor) { 
-            this.y -= 170;
+        let floor = canvas.height / 1.70;
+        if (this.y === floor || this.y > floor) { 
+            this.y -= 180;
         }
     }
   
     bobDrop = (speed) => {
-        let floor = canvas.height / 1.65;
+        let floor = canvas.height / 1.7;
         if (this.y < floor) { // if bob is in the air
             this.y += speed
             if(this.y >= floor){

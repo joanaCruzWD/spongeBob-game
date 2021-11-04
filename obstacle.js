@@ -5,7 +5,7 @@ class Obstacle{
         this.width = 45;
         this.height = 50;
         this.x = xPos;
-        this.y = 260;
+        this.y = 385;
     }
     drawObstacles = () => {
         ctx.drawImage(this.image, this.x, this.y, this.width, this.height);

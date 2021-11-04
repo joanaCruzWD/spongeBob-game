@@ -9,7 +9,8 @@ class Game {
             "./images/star.png",
             "./images/crab.png",
             "./images/squid.png",
-            "./images/plankton.png"
+            "./images/plankton.png",
+            "./images/MrsPuff.png"
         ];
         this.obstacleArr = [new Obstacle("./images/snail_char.png", 500)];
         this.obstaclesDistance = 100;
@@ -51,7 +52,7 @@ class Game {
     
         //* 2. MOVEMENT AND CHANGES ON ELEMENTS
         if (this.bob.bobDrop(this.bobDropSpeed)) {
-            if (this.obstacleArr.length % 5 === 0) {
+            if (this.obstacleArr.length % 4 === 0) {
                 this.obstacleSpeed++
                 this.bobDropSpeed += 0.5
             }
@@ -66,7 +67,7 @@ class Game {
         this.addObstacles();
         this.obstacleArr.forEach((eachObstacle) => {
             if (this.bob.bobSnailSquidCollision(eachObstacle)) {
-                this.gameover();
+               this.gameover();
             }
         })
     

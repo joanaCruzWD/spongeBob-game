@@ -23,12 +23,17 @@
   min-height: 36px;
   position: relative;
 }
+#board{
+  position: absolute;
+  top: 1%;
+  left: 11%;
+}
 
 /* Initial screen */
 #initial_logo {
   position: absolute;
   top: 10%;
-  left: 15%;
+  right: 10%;
 }
 /* Style of the buttons */
 #start-btn {
@@ -47,8 +52,8 @@
   text-shadow: 0px 1px 0px #528ecc;
   padding: 20px;
   position: absolute;
-  top: 48%;
-  left: 18%;
+  top: 50%;
+  right: 16%;
 }
 #restart-btn {
   box-shadow: inset 0px 1px 0px 0px #bbdaf7;
@@ -66,8 +71,8 @@
   text-shadow: 0px 1px 0px #528ecc;
   padding: 20px;
   position: absolute;
-  top: 10%;
-  margin-left: 350px;
+  top: 50%;
+  right: 16%;
 }
 #my-canvas {
   background-image: url("./images/background.jpg");
@@ -81,8 +86,8 @@
   color: rgb(19, 69, 108);
   transform-style: preserve-3d;
   position: absolute;
-  top: 92%;
-  left: 18%;
+  top: 95%;
+  right: 18%;
   transform: translateY(-50%) translateX(-50%);
 }
 .score {
@@ -90,5 +95,5 @@
   font-size:40px;
   position: relative;
   line-height: 40px;
-  left: 30%;
+  left: 35%;
 }
