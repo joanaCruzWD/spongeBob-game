@@ -1,4 +1,4 @@
-class Obstacle{
+class Obstacle {
     constructor(srcImg, xPos) {
         this.image = new Image();
         this.image.src = srcImg;

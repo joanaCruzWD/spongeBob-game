@@ -32,14 +32,6 @@
   top: 1%;
   left: 11%;
 }
-
-/* Initial screen */
-/* #initial_logo {
-  position: absolute;
-  top: 10%;
-  right: 10%;
-} */
-/* Style of the buttons */
 #start-btn {
   box-shadow: inset 0px 1px 0px 0px #bbdaf7;
   background: linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
