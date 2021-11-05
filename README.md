@@ -3,5 +3,3 @@
 2. Just press spacebar to jump and save SpongeBob from collide with his friends!
 3. Be a better player than me ;)
 
-<a href="https://joanacruzwd.github.io/spongeBob-game/">
-Live Demo!</a>
