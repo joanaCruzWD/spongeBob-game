@@ -2,24 +2,23 @@ class Bob {
     constructor() {
         this.bobImg = new Image();
         this.bobImg.src = "./images/sponge.gif";
-        this.width = 100;
-        this.height = 100;
+        this.width = 120;
+        this.height = 120;
         this.x = canvas.width / 14;
-        this.y = canvas.height / 1.70;
+        this.y = canvas.height / 1.8;
     }
-
     //methods
     drawBob = () => {
         ctx.drawImage(this.bobImg, this.x, this.y, this.width, this.height);
     }
     bobJump = () => {
-        let floor = canvas.height / 1.70;
+        let floor = canvas.height / 1.8;
         if (this.y === floor || this.y > floor) {
-            this.y -= 180;
+            this.y -= 210;
         }
     }
     bobDrop = (speed) => {
-        let floor = canvas.height / 1.7;
+        let floor = canvas.height / 1.8;
         if (this.y < floor) {
             this.y += speed
             if (this.y >= floor) {

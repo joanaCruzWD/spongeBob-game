@@ -2,8 +2,8 @@ class Obstacle {
     constructor(srcImg, xPos) {
         this.image = new Image();
         this.image.src = srcImg;
-        this.width = 45;
-        this.height = 50;
+        this.width = 50;
+        this.height = 45;
         this.x = xPos;
         this.y = 385;
     }
