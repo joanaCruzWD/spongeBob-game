@@ -1,6 +1,6 @@
 @font-face {
   font-family: Krabby Patty;
-  src: url("/font/krabby_patty/Krabby\ Patty.ttf");
+  src: url("https://www.dafont.com/krabby-patty.font");
   text-shadow: 1px 1px 5px black;
 }
 .container {
