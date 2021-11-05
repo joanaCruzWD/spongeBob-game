@@ -1,7 +1,7 @@
 class Bob {
     constructor() {
         this.bobImg = new Image();
-        this.bobImg.src = "./images/sponge.gif";
+        this.bobImg.src = "./images/sponge.png";
         this.width = 120;
         this.height = 120;
         this.x = canvas.width / 14;

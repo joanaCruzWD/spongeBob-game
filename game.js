@@ -12,7 +12,7 @@ class Game {
       "./images/MrsPuff.png",
     ];
     this.obstacleArr = [new Obstacle("./images/snail_char.png", 875)];
-    this.obstaclesDistance = 120;
+    this.obstaclesDistance = 85;
     this.isGameOver = false;
     this.obstacleSpeed = 2.5;
     this.bobDropSpeed = 2;
