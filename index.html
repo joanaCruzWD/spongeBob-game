@@ -6,39 +6,33 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SpongeBob</title>
-  <link rel="icon" href="./images/icon.png" type="image/icon.png" />
+  <link rel="icon" href="./images/icon-html.png" type="image/icon.png" alt="icon of the site"/>
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <div class="logo">
-    <img id="initial_logo" src="./images/logo_sponge.png" width="400" />
+    <img id="initial_logo" src="./images/logo_sponge.png" width="400" alt="logo of the character"/>
   </div>
 
   <div class="all-features">
-    <!-- Game over tag -->
     <div id="board">
       <div id="gameover-screen" class="enemies">
-        <img src="./images/gameover.jpg" width="850" height="550" alt="logo" />
+        <img src="./images/gameover.jpg" width="850" height="550" alt="game over screen" />
         <div>
           <button id="restart-btn">Play Again!</button>
         </div>
       </div>
-
-      <!-- Game  tag -->
       <canvas id="my-canvas" width="850" height="550"></canvas>
 
-      <!-- initial screen tag -->
       <div id="initial-screen" class="enemies">
-        <img src="./images/initial_img.jpg" alt="initial screen " width="850" height="550" />
+        <img src="./images/initial_img.jpg" alt="initial screen " width="850" height="550" alt="first screen"/>
         <div>
           <button id="start-btn">Start!</button>
         </div>
       </div>
-
-      <!-- Enemies tag -->
       <div class="container">
-        <img src="./images/instructions.png" alt="instructions" width="350" height="550" />
+        <img src="./images/instructions.png" alt="instructions" width="350" height="550" alt="instructions board"/>
         <div id="score" class="score">
           <div>SCORE: <span>0</span></div>
         </div>

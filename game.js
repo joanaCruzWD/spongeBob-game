@@ -21,7 +21,6 @@ class Game {
     this.scoreTag = document.querySelector("span");
     this.scoreTag.innerHTML = this.score;
   }
-
   gameover = () => {
     this.isGameOver = true;
     gameSound.pause();
@@ -30,7 +29,6 @@ class Game {
     canvas.style.display = "none";
     gameOverScreen.style.display = "inline-block";
   };
-
   addObstacles = () => {
     let lastIdx = this.obstacleArr.length - 1;
     let lastObstacle = this.obstacleArr[lastIdx];

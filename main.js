@@ -3,12 +3,12 @@ let canvas = document.querySelector("#my-canvas");
 let score = document.querySelector("#score");
 let ctx = canvas.getContext("2d");
 //Game music
-let gameSound = document.createElement("audio"); //empty element
+let gameSound = document.createElement("audio"); 
 gameSound.src = "songs/gameMusic.mp3";
 gameSound.type = "audio/mpeg";
 document.querySelector(".container").appendChild(gameSound);
 //Game over music
-let gameOverSound = document.createElement("audio"); //empty element
+let gameOverSound = document.createElement("audio");
 gameOverSound.src = "songs/gameOver.mp3";
 gameOverSound.type = "audio/mpeg";
 document.querySelector(".container").appendChild(gameOverSound);
@@ -31,7 +31,6 @@ const startGame = () => {
   gameOverSound.currentTime = 0;
   gameSound.play();
 };
-
 const restartGame = () => {
   gameOverScreen.style.display = "none";
   canvas.style.display = "inline-block";

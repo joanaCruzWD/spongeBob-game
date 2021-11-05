@@ -12,37 +12,31 @@ class Bob {
     drawBob = () => {
         ctx.drawImage(this.bobImg, this.x, this.y, this.width, this.height);
     }
-
     bobJump = () => {
         let floor = canvas.height / 1.70;
         if (this.y === floor || this.y > floor) {
             this.y -= 180;
         }
     }
-
     bobDrop = (speed) => {
         let floor = canvas.height / 1.7;
-        if (this.y < floor) { // if bob is in the air
+        if (this.y < floor) {
             this.y += speed
             if (this.y >= floor) {
-                return true // on the floor
+                return true
             }
-            return false // still in the air
+            return false
         }
         return false
     }
-
     bobSnailSquidCollision = (singleObstacle) => {
-        // check if the birds collides with one pipe
         singleObstacle.x
         singleObstacle.y
-
         if (this.x < singleObstacle.x + singleObstacle.width &&
             this.x + this.width > singleObstacle.x &&
             this.y < singleObstacle.y + singleObstacle.height &&
             this.height + this.y > singleObstacle.y) {
             return true
-            //console.log("Collision happening!");
         } else {
             return false
         }

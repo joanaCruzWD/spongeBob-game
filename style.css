@@ -1,17 +1,14 @@
-/* Font */
 @font-face {
   font-family: Krabby Patty;
   src: url("/font/krabby_patty/Krabby\ Patty.ttf");
   text-shadow: 1px 1px 5px black;
 }
-
 .container {
   font-family: Krabby Patty;
   text-shadow: 1px 1px 5px black;
   vertical-align: top;
   display: inline-block;
 }
-
 .logo {
   margin: auto;
   width: 50%;
@@ -75,7 +72,6 @@
 #gameover-screen {
   display: none;
 }
-
 .score {
   font-family: Krabby Patty;
   color: rgb(19, 69, 108);
@@ -88,7 +84,6 @@
   left: 35%;
   display: none;
 }
-
 .enemies {
   display: inline-block;
 }
