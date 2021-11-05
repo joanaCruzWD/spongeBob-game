@@ -1,11 +1,10 @@
 @font-face {
-  font-family: Krabby Patty;
-  src: url("https://www.dafont.com/krabby-patty.font");
-  src: url("/font/Krabby\ Patty.ttf");
+  font-family: "KrabbyPatty";
+  src: url("./font/KrabbyPatty.ttf");
   text-shadow: 1px 1px 5px black;
 }
 .container {
-  font-family: Krabby Patty;
+  font-family: "KrabbyPatty";
   text-shadow: 1px 1px 5px black;
   vertical-align: top;
   display: inline-block;
@@ -39,7 +38,7 @@
   display: inline-block;
   cursor: pointer;
   color: #ffffff;
-  font-family: "Krabby Patty";
+  font-family: "KrabbyPatty";
   font-weight: lighter;
   font-size: 30px;
   text-decoration: none;
@@ -57,7 +56,7 @@
   display: inline-block;
   cursor: pointer;
   color: #ffffff;
-  font-family: "Krabby Patty";
+  font-family: "KrabbyPatty";
   font-weight: lighter;
   font-size: 30px;
   text-decoration: none;

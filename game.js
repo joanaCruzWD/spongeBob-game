@@ -14,7 +14,7 @@ class Game {
     this.obstacleArr = [new Obstacle("./images/snail_char.png", 875)];
     this.obstaclesDistance = 85;
     this.isGameOver = false;
-    this.obstacleSpeed = 2.5;
+    this.obstacleSpeed = 3;
     this.bobDropSpeed = 2;
     this.randomRange = [850, 900, 950];
     this.score = 0;
@@ -53,7 +53,7 @@ class Game {
 
     //* 2. MOVEMENT AND CHANGES ON ELEMENTS
     if (this.bob.bobDrop(this.bobDropSpeed)) {
-      if (this.obstacleArr.length % 4 === 0) {
+      if (this.obstacleArr.length % 3 === 0) {
         this.obstacleSpeed++;
         this.bobDropSpeed += 0.5;
       }
